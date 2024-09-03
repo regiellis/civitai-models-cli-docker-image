@@ -18,6 +18,7 @@ RUN pip install --upgrade pip setuptools
 
 WORKDIR /home/civitaiuser
 COPY ./sample.env /home/civitaiuser/.env
+COPY ./docker.env /home/civitaiuser/docker.env
 COPY requirements.txt /home/civitaiuser/requirements.txt
 
 RUN pip install --no-cache-dir -r /home/civitaiuser/requirements.txt
