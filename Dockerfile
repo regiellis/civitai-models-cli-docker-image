@@ -17,7 +17,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 RUN pip install --upgrade pip setuptools
 
 WORKDIR /home/civitaiuser
-COPY ./requirements.txt .
+COPY ./sample.env /home/civitaiuser/.env
 
 RUN pip install --no-cache-dir -r requirements.txt
 
