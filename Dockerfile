@@ -14,13 +14,9 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 
 # Install required packages with pip
-RUN pip install --upgrade pip setuptools wheel typer \
-    rich httpx shellingham html2text \
-    python-dotenv questionary ollama openai \
-    groq asyncio tenacity
+RUN pip install --upgrade pip setuptools
 
 WORKDIR /home/civitaiuser
-COPY ./.env /home/.config/civitai-model-manager/
 COPY ./requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
