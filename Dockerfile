@@ -18,8 +18,9 @@ RUN pip install --upgrade pip setuptools
 
 WORKDIR /home/civitaiuser
 COPY ./sample.env /home/civitaiuser/.env
+COPY requirements.txt /home/civitaiuser/requirements.txt
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /home/civitaiuser/requirements.txt
 
 RUN useradd -ms /bin/zsh civitaiuser
 # Install oh-my-zsh for civitaiuser
