@@ -8,5 +8,6 @@ services:
       - PATH=$PATH:/home/civitaiuser/.local/bin
     volumes:
       - .:/home/civitaiuser
+      - ${MODELS_DIR}:/home/civitaiuser/models
     working_dir: /home/civitaiuser
     command: ["zsh"]

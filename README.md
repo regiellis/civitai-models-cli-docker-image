@@ -2,6 +2,13 @@
 
 This repository contains the necessary files to build and run a Docker container for the civitai-models-cli. The service is configured using a `Dockerfile` and `docker-compose.yaml`.
 
+> [!IMPORTANT]
+> You must first copy or reanme the `docker.env` file to `.env` and make sure to update
+> the `MODEL_DIR` variable to the location where you models are stored on yoour host before running any of the docker commands.
+
+> [!NOTE]
+> It is recommend that you update the `sample.env` file before running the docker commands. You do not need to rename this file to `.env`, it will be automatically renamed when copied into the container.
+
 ## Prerequisites
 
 - Docker

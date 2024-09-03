@@ -1,11 +1,14 @@
 #!/bin/bash
 set -e
 
-set -e
-
 # Load environment variables from .env file
 if [ -f .env ]; then
-  export $(cat .env | xargs)
+  set -a
+  source .env
+  set +a
+  
+  # Debug: Print the value of MODELS_DIR
+  echo "MODELS_DIR: ${MODELS_DIR}"
 fi
 
 docker build -t civitai-image .
