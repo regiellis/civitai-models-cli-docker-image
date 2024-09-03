@@ -55,3 +55,6 @@ venv.bak/
 # Docker
 **/Dockerfile
 **/docker-compose.yaml
+
+# Docker volumes
+/home/civitaiuser/
