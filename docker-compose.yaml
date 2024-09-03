@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  civitai-service:
+    build: .
+    container_name: civitai-container
+    environment:
+      - LC_ALL=C.UTF-8
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
+      - PATH=$PATH:/home/civitaiuser/.local/bin
+    volumes:
+      - .:/home/civitaiuser
+    working_dir: /home/civitaiuser
+    command: ["bash"]
