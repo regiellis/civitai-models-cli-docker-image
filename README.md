@@ -53,7 +53,17 @@ The `docker-compose.yaml` file is used to define and run the Civitai service as 
     docker-compose up --build
     ```
 
-3. **Access the Container**:
+3. **Using run.sh (Linux/macOS)**:
+    ```bash
+    ./run.sh
+    ```
+
+4. **Using run.bat (Windows)**:
+    ```cmd
+    run.bat
+    ```
+
+5. **Access the Container**:
     The container will start and you can access it using:
     ```bash
     docker exec -it civitai-container bash
