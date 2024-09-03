@@ -1,6 +1,6 @@
-# Civitai Service
+# Civitai Models CLI Stand-alone Docker Image
 
-This repository contains the necessary files to build and run a Docker container for the Civitai service. The service is configured using a `Dockerfile` and `docker-compose.yaml`.
+This repository contains the necessary files to build and run a Docker container for the civitai-models-cli. The service is configured using a `Dockerfile` and `docker-compose.yaml`.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ This repository contains the necessary files to build and run a Docker container
 
 ## Dockerfile
 
-The `Dockerfile` is used to create a Docker image for the Civitai service. It is based on the `debian:bullseye-slim` image and installs the necessary dependencies, including Python 3 and various Python packages.
+The `Dockerfile` is used to create a Docker image for the civitai-models-cli. It is based on the `debian:bullseye-slim` image and installs the necessary dependencies, including Python 3 and various Python packages.
 
 ### Key Steps in the Dockerfile
 
@@ -26,7 +26,7 @@ The `Dockerfile` is used to create a Docker image for the Civitai service. It is
 
 ## Docker Compose
 
-The `docker-compose.yaml` file is used to define and run the Civitai service as a Docker container.
+The `docker-compose.yaml` file is used to define and run the civitai-models-cli as a Docker container.
 
 ### Key Sections in docker-compose.yaml
 
@@ -66,7 +66,7 @@ The `docker-compose.yaml` file is used to define and run the Civitai service as 
 5. **Access the Container**:
     The container will start and you can access it using:
     ```bash
-    docker exec -it civitai-container bash
+    docker exec -it civitai-container zsh
     ```
 
 ## Stopping the Service
