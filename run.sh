@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
+set -e
+
+# Load environment variables from .env file
+if [ -f .env ]; then
+  export $(cat .env | xargs)
+fi
+
 docker build -t civitai-image .
 
 if [ -z "${MODELS_DIR}" ]; then

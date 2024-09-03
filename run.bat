@@ -1,4 +1,9 @@
 @echo off
+@echo off
+
+# Load environment variables from .env file
+for /f "tokens=*" %%i in (.env) do set %%i
+
 docker build -t civitai-image .
 
 if "%MODELS_DIR%"=="" (
