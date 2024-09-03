@@ -58,3 +58,8 @@ venv.bak/
 
 # Docker volumes
 /home/civitaiuser/
+
+# Zsh dotfiles
+.zshrc
+.zsh_history
+.zsh_sessions
