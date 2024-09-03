@@ -1,6 +1,7 @@
 # Civitai Models CLI stand-alone Docker Image
 
 This repository contains the necessary files to build and run a Docker container for the civitai-models-cli. The service is configured using a `Dockerfile` and `docker-compose.yaml`.
+You can checkout the project here: [https://github.com/civitai/civitai-models-cli](https://github.com/civitai/civitai-models-cli)
 
 > [!IMPORTANT]
 > You must first copy or reanme the `docker.env` file to `.env` and make sure to update
