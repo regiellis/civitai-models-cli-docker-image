@@ -1,0 +1,3 @@
+pipx
+setuptools
+civitai-models-manager
