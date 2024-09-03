@@ -11,4 +11,4 @@ services:
     volumes:
       - .:/home/civitaiuser
     working_dir: /home/civitaiuser
-    command: ["bash"]
+    command: ["zsh"]
