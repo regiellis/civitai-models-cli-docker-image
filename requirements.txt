@@ -1,3 +1,4 @@
 pipx
 setuptools
 civitai-models-manager
+bpython
